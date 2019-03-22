@@ -7,8 +7,7 @@ class HomeComponent extends React.Component {
     }
 
     render() {
-        console.log("SoilComponent", this.props);
-        return(<b>Home Component</b>)
+        return(<div>Home Component</div>)
     }
 }
 

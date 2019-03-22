@@ -23,18 +23,12 @@ class App extends Component {
       <Provider store={store}>
 
       <div className="App" >
-
-        <div className="row">
-          <div className="col-sm-12">
             <MainContainer></MainContainer>
-          </div>
-        </div>
+      </div>
         
         
         
         <Footer /> 
-
-      </div>
       </Provider>
     );
   }
