@@ -6,6 +6,7 @@ import Header from '../../Components/Header';
 import { connect } from 'react-redux';
 import Styles from './MainContainer.scss'
 import CustomCarousel from './../../Components/carousel/Carousel';
+import Icons from './../../Components/Icons'
 class MainContainer extends React.Component {
     constructor(props) {
         super(props);
@@ -15,12 +16,13 @@ class MainContainer extends React.Component {
         console.log("propss", this.props);
         return(<Router>
                     <div>
+                        <Icons></Icons>
                          <Header></Header>
                          <CustomCarousel></CustomCarousel>
-                        <div className="router-container">
+                        {/* <div className="router-container">
                             <Route path="/" component={HomeComponent}></Route>
                             <Route path="/quiz" component={ForecastSoilComponent}></Route>
-                        </div>
+                        </div> */}
                     </div>
                 </Router>)
     }
