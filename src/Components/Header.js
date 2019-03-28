@@ -55,20 +55,29 @@ class Header extends React.Component {
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav mr-auto">
                                     <li className="nav-item">
-                                    <div className = "dropdown">
-                                        <a className="nav-link" href="#">Home
-                                          
-                                        </a>
-                                        <div className="dropdown-content">
-                                        <a href="#">Link 1</a>
-                                        <a href="#">Link 2</a>
-                                        <a href="#">Link 3</a>
+                                        <div className="btn-group">
+                                        <button type="button" className="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Home
+                                        </button>
+                                        <div className="dropdown-menu dropdown-menu-right">
+                                            <button className="dropdown-item" type="button">Action</button>
+                                            <button className="dropdown-item" type="button">Another action</button>
+                                            <button className="dropdown-item" type="button">Something else here</button>
                                         </div>
                                         </div>
                                     </li>
                 
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">Portfolio</a>
+                                    <div className="btn-group">
+                                        <button type="button" className="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Portfolio
+                                        </button>
+                                        <div className="dropdown-menu dropdown-menu-right">
+                                            <button className="dropdown-item" type="button">Action</button>
+                                            <button className="dropdown-item" type="button">Another action</button>
+                                            <button className="dropdown-item" type="button">Something else here</button>
+                                        </div>
+                                        </div>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="#">About us</a>
