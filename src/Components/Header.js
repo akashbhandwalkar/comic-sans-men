@@ -1,6 +1,6 @@
 import React from 'react';
 import Styles from './Header.scss';
-
+import SlideMenu from 'react-slide-menu';
 
 class Header extends React.Component {
     constructor(props) {
@@ -37,7 +37,10 @@ class Header extends React.Component {
                         ComicSansMen 
                     
                         {
-                            this.state.isHidden && <i className="fa fa-angle-double-right fa-2x cursor-pointer" aria-hidden="true" onClick = {this.showHeaderMenu}></i> 
+                            this.state.isHidden && 
+                            <SlideMenu>
+                                <i className="fa fa-angle-double-right fa-2x cursor-pointer" aria-hidden="true" onClick = {this.showHeaderMenu}></i> 
+                            </SlideMenu>
                             
                         }
                     </div>
